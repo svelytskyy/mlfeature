@@ -1,0 +1,1 @@
+drop table if exists public.flyway_history_table;
