@@ -1,5 +1,8 @@
 package com.forgerock.mlfeature.model.http;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class BaseResponse {
 	
 	public BaseResponse(String code, String message) {
@@ -36,6 +39,10 @@ public class BaseResponse {
 		return "BaseResponse [code=" + code + ", message=" + message + "]";
 	}
 	
-	
+	public JsonNode toJson(Object object) {
+		ObjectMapper mapper = new ObjectMapper();
+		return mapper.convertValue(object, JsonNode.class);
+	}
+
 
 }

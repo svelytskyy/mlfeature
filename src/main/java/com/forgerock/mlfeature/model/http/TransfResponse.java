@@ -19,6 +19,4 @@ public class TransfResponse extends BaseResponse{
 		super(code, message);
 	}
 	
-	
-	
 }

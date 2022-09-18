@@ -15,7 +15,8 @@
     <context:annotation-config />
     <context:component-scan base-package="com.forgerock.mlfeature.controller,
     									com.forgerock.mlfeature.config,
-    									com.forgerock.mlfeature.service
+    									com.forgerock.mlfeature.service,
+    									com.forgerock.mlfeature.exception
     									"/>
   	 <!-- <import resource="spring-db-pool.xml"/> -->
 	<mvc:annotation-driven/>
