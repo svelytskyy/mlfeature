@@ -96,13 +96,12 @@
 			<artifactId>jslt</artifactId>
 			<version>0.1.13</version>
 		</dependency>
-		<!-- 
+		<!-- <dependency> <groupId>net.logstash.logback</groupId> <artifactId>logstash-logback-encoder</artifactId> 
+			<version>4.7</version> </dependency> -->
 		<dependency>
-		   <groupId>net.logstash.logback</groupId>
-		   <artifactId>logstash-logback-encoder</artifactId>
-		   <version>4.7</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		-->	
 	</dependencies>
 
 	<build>

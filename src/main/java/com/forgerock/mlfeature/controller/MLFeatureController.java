@@ -70,13 +70,11 @@ public class MLFeatureController {
 		try {
 			logger.debug("request : " + input.toJson(input).toPrettyString());
 			
-			Map<String, Object> payload;
-			payload = service.transform(input);
+			Map<String, Object> payload = service.transform(input);
 			TransfResponse resp = new TransfResponse("200", "Success");
 			resp.setPayload(payload);
 			
 			logger.debug("response : " + resp.toJson(resp).toPrettyString());
-			
 			return resp;
 		}catch(MLFeatureException e) {
 			throw new MLFeatureRuntimeException(e);
